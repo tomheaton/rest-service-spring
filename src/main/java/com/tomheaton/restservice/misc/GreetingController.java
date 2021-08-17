@@ -1,4 +1,4 @@
-package com.tomheaton.restservice;
+package com.tomheaton.restservice.misc;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

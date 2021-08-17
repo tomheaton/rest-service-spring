@@ -1,4 +1,4 @@
-package com.tomheaton.restservice;
+package com.tomheaton.restservice.misc;
 
 public class Greeting {
 
