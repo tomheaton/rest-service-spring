@@ -1,4 +1,4 @@
-package com.tomheaton.restservice;
+package com.tomheaton.restservice.config;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;

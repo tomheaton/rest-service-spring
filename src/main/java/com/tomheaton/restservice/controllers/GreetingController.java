@@ -1,5 +1,6 @@
-package com.tomheaton.restservice.misc;
+package com.tomheaton.restservice.controllers;
 
+import com.tomheaton.restservice.misc.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
