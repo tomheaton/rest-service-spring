@@ -6,19 +6,19 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class Employee {
+public class Planet {
 
     @Id
     @GeneratedValue
     private Long id;
     private String name;
-    private String role;
+    private String designation;
 
-    public Employee() {}
+    public Planet() {}
 
-    public Employee(String name, String role) {
+    public Planet(String name, String designation) {
         this.name = name;
-        this.role = role;
+        this.designation = designation;
     }
 
     public Long getId() {
@@ -35,29 +35,29 @@ public class Employee {
         this.name = name;
     }
 
-    public String getRole() {
-        return role;
+    public String getDesignation() {
+        return designation;
     }
-    public void setRole(String role) {
-        this.role = role;
+    public void setDesignation(String designation) {
+        this.designation = designation;
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (!(obj instanceof Employee employee))
+        if (!(obj instanceof Planet planet))
             return false;
-        return Objects.equals(this.id, employee.id) && Objects.equals(this.name, employee.name) && Objects.equals(this.role, employee.role);
+        return Objects.equals(this.id, planet.id) && Objects.equals(this.name, planet.name) && Objects.equals(this.designation, planet.designation);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(this.id, this.name, this.role);
+        return Objects.hash(this.id, this.name, this.designation);
     }
 
     @Override
     public String toString() {
-        return String.format("Employee { id=%s, name='%s', role='%s' }", this.id, this.name, this.role);
+        return String.format("Planet { id=%s, name='%s', designation='%s' }", this.id, this.name, this.designation);
     }
 }

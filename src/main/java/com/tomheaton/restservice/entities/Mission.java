@@ -6,7 +6,7 @@ import javax.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class Employee {
+public class Mission {
 
     @Id
     @GeneratedValue
@@ -14,9 +14,9 @@ public class Employee {
     private String name;
     private String role;
 
-    public Employee() {}
+    public Mission() {}
 
-    public Employee(String name, String role) {
+    public Mission(String name, String role) {
         this.name = name;
         this.role = role;
     }
@@ -46,9 +46,9 @@ public class Employee {
     public boolean equals(Object obj) {
         if (this == obj)
             return true;
-        if (!(obj instanceof Employee employee))
+        if (!(obj instanceof Mission mission))
             return false;
-        return Objects.equals(this.id, employee.id) && Objects.equals(this.name, employee.name) && Objects.equals(this.role, employee.role);
+        return Objects.equals(this.id, mission.id) && Objects.equals(this.name, mission.name) && Objects.equals(this.role, mission.role);
     }
 
     @Override
@@ -58,6 +58,6 @@ public class Employee {
 
     @Override
     public String toString() {
-        return String.format("Employee { id=%s, name='%s', role='%s' }", this.id, this.name, this.role);
+        return String.format("Mission { id=%s, name='%s', role='%s' }", this.id, this.name, this.role);
     }
 }
