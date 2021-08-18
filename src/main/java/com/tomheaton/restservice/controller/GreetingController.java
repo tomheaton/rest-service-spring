@@ -1,4 +1,4 @@
-package com.tomheaton.restservice.controllers;
+package com.tomheaton.restservice.controller;
 
 import com.tomheaton.restservice.misc.Greeting;
 import org.springframework.web.bind.annotation.GetMapping;

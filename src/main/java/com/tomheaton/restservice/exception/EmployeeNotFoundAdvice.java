@@ -1,4 +1,4 @@
-package com.tomheaton.restservice.exceptions;
+package com.tomheaton.restservice.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

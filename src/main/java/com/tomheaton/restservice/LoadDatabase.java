@@ -1,7 +1,7 @@
 package com.tomheaton.restservice;
 
-import com.tomheaton.restservice.entities.Employee;
-import com.tomheaton.restservice.repositories.EmployeeRepository;
+import com.tomheaton.restservice.entity.Employee;
+import com.tomheaton.restservice.repository.EmployeeRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;

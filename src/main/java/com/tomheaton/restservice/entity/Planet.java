@@ -1,4 +1,4 @@
-package com.tomheaton.restservice.entities;
+package com.tomheaton.restservice.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

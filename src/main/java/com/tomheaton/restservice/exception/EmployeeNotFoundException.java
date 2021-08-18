@@ -1,4 +1,4 @@
-package com.tomheaton.restservice.exceptions;
+package com.tomheaton.restservice.exception;
 
 public class EmployeeNotFoundException extends RuntimeException {
 
